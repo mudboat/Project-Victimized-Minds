@@ -10,13 +10,27 @@ public class Gamemanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Nametext.text = StringClass.CharacterText0;
-        Dialoguetext.text = StringClass.DialogueText0;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void ChangeDialogue(int id)
+    {
+        Dialoguetext.text = StringClass.Dialogues[id];
+    }
+
+    public void ChangeName(int id)
+    {
+        Nametext.text = StringClass.CharacterNames[id];
+    }
+
+    public void Dialoguepanelclicked()
+    {
+
     }
 }
