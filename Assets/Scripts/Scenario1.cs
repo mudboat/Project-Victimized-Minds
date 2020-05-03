@@ -26,11 +26,19 @@ public class Scenario1 : MonoBehaviour
         }
     }
 
+    //次のIDを返す
+    int Choices()
+    {
+
+        return 0;
+    }
+
     void Maine(int a)
     {
         //選択肢やキャラ名や画像変化等の動作が必要な時をcaseに
         switch (a)
         {
+
             default:
                 Gamemanager.ChangeDialogue(a + 1);
                 Cid += 1;
