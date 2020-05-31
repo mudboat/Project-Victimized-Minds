@@ -20,17 +20,28 @@ public class Scenario1 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp("z") == true)
-        {
-            Maine(Cid);
-        }
+        Maine(Cid);
     }
 
-    //次のIDを返す
-    int Choices()
+    //選ばれた選択肢を返す
+    int Choices(int a)
     {
-
-        return 0;
+        if (Input.GetKeyUp("1"))
+        {
+            return 1;
+        }
+        else
+        if (Input.GetKeyUp("2"))
+        {
+            return 2;
+        }
+        else
+        if (Input.GetKeyUp("3"))
+        {
+            return 3;
+        }
+        else
+            return 0;
     }
 
     void Maine(int a)
@@ -38,10 +49,29 @@ public class Scenario1 : MonoBehaviour
         //選択肢やキャラ名や画像変化等の動作が必要な時をcaseに
         switch (a)
         {
+            case 41:
+                if (Choices(3) == 1)
+                {
+                    Gamemanager.ChangeDialogue(42);
+                    Cid = 42;
+                    break;
+                }
+                else
+                if (Choices(3) == 2)
+                    {
+                    break;
+                    }
+                else
+                if (Choices(3) == 3)
+                    {
+                    break;
+                    }
+                else
+               break;
 
             default:
-                Gamemanager.ChangeDialogue(a + 1);
-                Cid += 1;
+                if (Input.GetKeyUp("z")) { Gamemanager.ChangeDialogue(a + 1);
+                    Cid += 1; }
                 break;
         }
     }
