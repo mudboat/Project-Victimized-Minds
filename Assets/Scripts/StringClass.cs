@@ -18,7 +18,7 @@ public class StringClass
 
     //ここから会話文
     //会話文を入力する上でのルール 分岐などが無い限りダイアログのidは飛ばさない
-    public static readonly string Dialogue0 = "僕は「(主人公名)」。";
+    public static readonly string Dialogue0 = "僕は「古田　史郎」。";
     public static readonly string Dialogue1 = "どこにでもいる普通の15歳。";
     public static readonly string Dialogue2 = "僕は今、高校の体育館にいる。";
     public static readonly string Dialogue3 = "校長「えー、新入生の皆様、入学おめでとうございます。」";

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Scenario1 : MonoBehaviour
 {
     public GameObject gamemanager;
@@ -15,7 +16,6 @@ public class Scenario1 : MonoBehaviour
         Gamemanager = gamemanager.GetComponent<Gamemanager>();
         Gamemanager.ChangeName(Ccid);
         Gamemanager.ChangeDialogue(Cid);
-        
     }
 
     void Update()
