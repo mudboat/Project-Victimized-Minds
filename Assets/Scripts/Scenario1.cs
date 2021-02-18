@@ -49,7 +49,7 @@ public class Scenario1 : MonoBehaviour
         //選択肢やキャラ名や画像変化等の動作が必要な時をcaseに
         switch (a)
         {
-            case 41:
+            case 52:
                 if (Choices(3) == 1)
                 {
                     Gamemanager.ChangeDialogue(42);
