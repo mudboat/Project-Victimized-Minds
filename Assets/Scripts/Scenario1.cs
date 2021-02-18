@@ -52,8 +52,8 @@ public class Scenario1 : MonoBehaviour
             case 52:
                 if (Choices(3) == 1)
                 {
-                    Gamemanager.ChangeDialogue(42);
-                    Cid = 42;
+                    Gamemanager.ChangeDialogue(55);
+                    Cid = 55;
                     break;
                 }
                 else
@@ -70,7 +70,7 @@ public class Scenario1 : MonoBehaviour
                break;
 
             default:
-                if (Input.GetKeyUp("z")) { Gamemanager.ChangeDialogue(a + 1);
+                if (Input.GetKeyUp(KeyCode.Return)) { Gamemanager.ChangeDialogue(a + 1);
                     Cid += 1; }
                 break;
         }
