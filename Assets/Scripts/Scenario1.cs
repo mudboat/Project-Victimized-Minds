@@ -10,17 +10,17 @@ public class Scenario1 : MonoBehaviour
     int Cid = 0;
     //初期のキャラ名ID
     int Ccid = 2;
-
     void Start()
     {
         Gamemanager = gamemanager.GetComponent<Gamemanager>();
         Gamemanager.ChangeName(Ccid);
         Gamemanager.ChangeDialogue(Cid);
+        
     }
 
     void Update()
     {
-        Maine(Cid);
+        Maine(Cid);    
     }
 
     //選ばれた選択肢を返す
